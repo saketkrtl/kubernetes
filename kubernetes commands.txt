@@ -1,0 +1,43 @@
+
+minikube status
+
+kubectl get services
+
+kubectl get pods
+
+kubectl create deployment mongo-deploy --image=mongo
+
+kubectl get pods
+kubectl get pods -o wide
+kubectl get all
+
+
+kubectl describe pod <PODNAME>
+
+kubectl logs <podname>
+
+kubectl get deployment
+kubectl get deployment <DeploymentName> -o yaml
+
+kubectl edit deployment <deployment name>
+
+kubectl get replicasets
+
+kubectl delete deployment --all
+
+--- enter to container----------
+
+kubectl exec -it <podname> -- bin/bash
+
+
+-------create deployment using yaml file---------
+kubectl apply -f nginx-project.yaml
+kubectl delete -f nginx-project.yaml
+
+-------create service---------------------
+
+kubectl apply -f nginx-project-service.yaml
+kubectl delete -f nginx-project-service.yaml
+kubectl get services
+kubectl describe service
+
