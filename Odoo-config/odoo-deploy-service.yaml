@@ -21,11 +21,11 @@ spec:
         - containerPort: 8069
         env:
         - name: HOST
-          value: postgres
+          value: 172.31.16.111
         - name: USER
-          value: admin
-        - name: PASSWORD
           value: root
+        - name: PASSWORD
+          value: Passsw0124r12Fd
 ---
 apiVersion: v1
 kind: Service
